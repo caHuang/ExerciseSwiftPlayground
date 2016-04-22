@@ -3,5 +3,8 @@
     <pages>
         <page name='Assignment Operator'/>
         <page name='Arithmetic Operators'/>
+        <page name='Compound Assignment Operators'/>
+        <page name='Comparison Operators'/>
+        <page name='Ternary Conditional Operator'/>
     </pages>
 </playground>

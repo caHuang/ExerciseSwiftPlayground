@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios'>
     <pages>
-        <page name='String Literals'/>
-        <page name='Initializing an Empty String'/>
-        <page name='String Mutability'/>
-        <page name='Working with Characters'/>
+        <page name='01 - String Literals'/>
+        <page name='02 - Initializing an Empty String'/>
+        <page name='03 - String Mutability'/>
+        <page name='04 - Working with Characters'/>
         <page name='Concatenating Strings and Characters'/>
         <page name='String Interpolation'/>
         <page name='Unicode'/>

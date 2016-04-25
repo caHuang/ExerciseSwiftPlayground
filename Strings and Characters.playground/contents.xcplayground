@@ -8,5 +8,8 @@
         <page name='Concatenating Strings and Characters'/>
         <page name='String Interpolation'/>
         <page name='Unicode'/>
+        <page name='Accessing and Modifying a String'/>
+        <page name='Counting Characters'/>
+        <page name='Comparing Strings'/>
     </pages>
 </playground>

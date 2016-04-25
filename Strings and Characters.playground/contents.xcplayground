@@ -5,11 +5,12 @@
         <page name='02 - Initializing an Empty String'/>
         <page name='03 - String Mutability'/>
         <page name='04 - Working with Characters'/>
-        <page name='Concatenating Strings and Characters'/>
-        <page name='String Interpolation'/>
-        <page name='Unicode'/>
-        <page name='Accessing and Modifying a String'/>
-        <page name='Counting Characters'/>
-        <page name='Comparing Strings'/>
+        <page name='05 - Concatenating Strings and Characters'/>
+        <page name='06 - String Interpolation'/>
+        <page name='07 - Unicode'/>
+        <page name='08 - Counting Characters'/>
+        <page name='09 - Accessing and Modifying a String'/>
+        <page name='10 - Comparing Strings'/>
+        <page name='11 - Unicode Representations of Strings'/>
     </pages>
 </playground>

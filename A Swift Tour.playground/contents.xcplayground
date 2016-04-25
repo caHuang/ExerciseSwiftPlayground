@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='Simple Values'/>
-        <page name='Control Flow'/>
-        <page name='Functions and Closures'/>
-        <page name='Objects and Classes'/>
-        <page name='Enumerations and Structures'/>
-        <page name='Protocols and Extensions'/>
-        <page name='Generics'/>
+        <page name='01 - Simple Values'/>
+        <page name='02 - Control Flow'/>
+        <page name='03 - Functions and Closures'/>
+        <page name='04 - Objects and Classes'/>
+        <page name='05 - Enumerations and Structures'/>
+        <page name='07 - Protocols and Extensions'/>
+        <page name='08 - Generics'/>
     </pages>
 </playground>

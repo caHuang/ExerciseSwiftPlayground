@@ -26,5 +26,3 @@ if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
 } else {
   print("ACCESS DENIED")
 }
-
-//: [Next](@next)

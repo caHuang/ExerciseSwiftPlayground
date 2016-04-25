@@ -10,13 +10,6 @@
 9 % 4
 -9 % 4
 
-var i = 0
-++i
-
-var a = 0
-let b = ++a
-let c = a++
-
 let three = 3
 let minusThree = -three
 let plusThree = -minusThree

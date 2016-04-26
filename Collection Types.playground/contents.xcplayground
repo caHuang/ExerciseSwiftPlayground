@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Arrays'/>
         <page name='02 - Sets'/>
+        <page name='03 - Dictionary Type Shorthand Syntax'/>
     </pages>
 </playground>

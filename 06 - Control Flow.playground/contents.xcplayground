@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - For-In Loops'/>
         <page name='02 - While Loops'/>
+        <page name='03 - Conditional Statements'/>
     </pages>
 </playground>

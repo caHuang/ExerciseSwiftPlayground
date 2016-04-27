@@ -4,5 +4,6 @@
         <page name='01 - For-In Loops'/>
         <page name='02 - While Loops'/>
         <page name='03 - Conditional Statements'/>
+        <page name='04 - Control Transfer Statements'/>
     </pages>
 </playground>

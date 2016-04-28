@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Defining and Calling Functions'/>
         <page name='02 - Function Parameters and Return Values'/>
+        <page name='03 - Function Parameter Names'/>
     </pages>
 </playground>

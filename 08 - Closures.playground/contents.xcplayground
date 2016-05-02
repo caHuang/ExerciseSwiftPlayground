@@ -4,5 +4,6 @@
         <page name='01 - Closure Expressions'/>
         <page name='02 - Trailing Closures'/>
         <page name='03 - Capturing Values'/>
+        <page name='04 - Closures Are Reference Types'/>
     </pages>
 </playground>

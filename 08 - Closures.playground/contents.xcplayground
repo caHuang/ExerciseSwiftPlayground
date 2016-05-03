@@ -6,5 +6,6 @@
         <page name='03 - Capturing Values'/>
         <page name='04 - Closures Are Reference Types'/>
         <page name='05 - Nonescaping Closures'/>
+        <page name='06 - Autoclosures'/>
     </pages>
 </playground>

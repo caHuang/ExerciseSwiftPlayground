@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Enumeration Syntax'/>
         <page name='02 - Matching Enumeration Values with a Switch Statement'/>
+        <page name='03 - Associated Values'/>
     </pages>
 </playground>

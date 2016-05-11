@@ -4,5 +4,6 @@
         <page name='01 - Stored Properties'/>
         <page name='02 - Computed Properties'/>
         <page name='03 - Property Observers'/>
+        <page name='04 - Type Properties'/>
     </pages>
 </playground>

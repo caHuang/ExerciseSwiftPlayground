@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Defining a Base Class'/>
         <page name='02 - Subclassing'/>
+        <page name='03 - Overriding'/>
     </pages>
 </playground>

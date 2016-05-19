@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Setting Initial Values for Stored Properties'/>
         <page name='02 - Customizing Initialization'/>
+        <page name='03 - Default Initializers'/>
     </pages>
 </playground>

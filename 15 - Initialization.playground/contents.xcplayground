@@ -4,5 +4,6 @@
         <page name='01 - Setting Initial Values for Stored Properties'/>
         <page name='02 - Customizing Initialization'/>
         <page name='03 - Default Initializers'/>
+        <page name='04 - Initializer Delegation for Value Types'/>
     </pages>
 </playground>

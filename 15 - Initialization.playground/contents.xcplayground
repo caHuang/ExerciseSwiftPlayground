@@ -5,5 +5,6 @@
         <page name='02 - Customizing Initialization'/>
         <page name='03 - Default Initializers'/>
         <page name='04 - Initializer Delegation for Value Types'/>
+        <page name='05 - Class Inheritance and Initialization'/>
     </pages>
 </playground>

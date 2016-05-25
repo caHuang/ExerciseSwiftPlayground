@@ -7,5 +7,6 @@
         <page name='04 - Initializer Delegation for Value Types'/>
         <page name='05 - Class Inheritance and Initialization'/>
         <page name='06 - Failable Initializers'/>
+        <page name='07 - Required Initializers'/>
     </pages>
 </playground>

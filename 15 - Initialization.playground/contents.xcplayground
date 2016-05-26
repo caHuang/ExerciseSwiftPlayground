@@ -8,5 +8,6 @@
         <page name='05 - Class Inheritance and Initialization'/>
         <page name='06 - Failable Initializers'/>
         <page name='07 - Required Initializers'/>
+        <page name='08 - Setting a Default Property Value with a Closure or Function'/>
     </pages>
 </playground>

@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - ARC in Action'/>
         <page name='02 - Strong Reference Cycles Between Class Instances'/>
+        <page name='03 - Resolving Strong Reference Cycles Between Class Instances'/>
     </pages>
 </playground>

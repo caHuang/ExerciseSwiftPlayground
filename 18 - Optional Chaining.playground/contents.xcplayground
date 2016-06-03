@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Optional Chaining as an Alternative to Forced Unwrapping'/>
         <page name='02 - Defining Model Classes for Optional Chaining'/>
+        <page name='03 - Accessing Properties Through Optional Chaining'/>
     </pages>
 </playground>

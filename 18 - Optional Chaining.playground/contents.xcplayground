@@ -5,5 +5,7 @@
         <page name='02 - Defining Model Classes for Optional Chaining'/>
         <page name='03 - Accessing Properties Through Optional Chaining'/>
         <page name='04 - Calling Methods Through Optional Chaining'/>
+        <page name='05 - Accessing Subscripts Through Optional Chaining'/>
+        <page name='06 - Linking Multiple Levels of Chaining'/>
     </pages>
 </playground>

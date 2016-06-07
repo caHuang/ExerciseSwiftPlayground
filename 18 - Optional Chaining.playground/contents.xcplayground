@@ -7,5 +7,6 @@
         <page name='04 - Calling Methods Through Optional Chaining'/>
         <page name='05 - Accessing Subscripts Through Optional Chaining'/>
         <page name='06 - Linking Multiple Levels of Chaining'/>
+        <page name='07 - Chaining on Methods with Optional Return Values'/>
     </pages>
 </playground>

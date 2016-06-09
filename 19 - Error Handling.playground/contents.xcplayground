@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Representing and Throwing Errors'/>
         <page name='02 - Handling Errors'/>
+        <page name='03 - Specifying Cleanup Actions'/>
     </pages>
 </playground>

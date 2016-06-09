@@ -2,6 +2,7 @@
 <playground version='6.0' target-platform='ios'>
     <pages>
         <page name='01 - Defining a Class Hierarchy for Type Casting'/>
-        <page name='02 - titled Page'/>
+        <page name='02 - Checking Type'/>
+        <page name='Downcasting'/>
     </pages>
 </playground>

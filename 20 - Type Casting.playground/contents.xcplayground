@@ -3,6 +3,7 @@
     <pages>
         <page name='01 - Defining a Class Hierarchy for Type Casting'/>
         <page name='02 - Checking Type'/>
-        <page name='Downcasting'/>
+        <page name='03 - Downcasting'/>
+        <page name='04 - Type Casting for Any and AnyObject'/>
     </pages>
 </playground>

@@ -16,6 +16,11 @@ let oranges = 5
 let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 
+let quotation = """
+I said "I have \(apples) apples."
+And then I said "I have \(apples + oranges) pieces of fruit."
+"""
+
 var shoppingList = ["catfish", "water", "tulips", "blue paint"]
 shoppingList[1] = "bottle of water"
 

@@ -39,7 +39,7 @@ class Square: NamedShape {
   }
   
   override func simpleDescription() -> String {
-    return "A square with sides of length \(sideLength)"
+    return "A square with sides of length \(sideLength)."
   }
 }
 let test = Square(sideLength: 5.2, name: "my test square")

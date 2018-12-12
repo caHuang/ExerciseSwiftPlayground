@@ -3,25 +3,25 @@
 //: Enumerations and Structures
 
 enum Rank: Int {
-  case Ace = 1
-  case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
-  case Jack, Queen, King
+  case ace = 1
+  case two, three, four, five, six, seven, eight, nine, ten
+  case jack, queen, king
   func simpleDescription() -> String {
     switch self {
-    case .Ace:
+    case .ace:
       return "ace"
-    case .Jack:
+    case .jack:
       return "jack"
-    case .Queen:
+    case .queen:
       return "queen"
-    case .King:
+    case .king:
       return "king"
     default:
       return String(self.rawValue)
     }
   }
 }
-let ace = Rank.Ace
+let ace = Rank.ace
 let aceRawValue = ace.rawValue
 
 if let convertedRank = Rank(rawValue: 3) {
@@ -29,22 +29,36 @@ if let convertedRank = Rank(rawValue: 3) {
 }
 
 enum Suit {
-  case Spades, Hearts, Diamonds, Clubs
+  case spades, hearts, diamonds, clubs
   func simpleDescription() -> String {
     switch self {
-    case .Spades:
+    case .spades:
       return "spades"
-    case .Hearts:
+    case .hearts:
       return "hearts"
-    case .Diamonds:
+    case .diamonds:
       return "diamonds"
-    case .Clubs:
+    case .clubs:
       return "clubs"
     }
   }
 }
-let hearts = Suit.Hearts
+let hearts = Suit.hearts
 let heartsDescription = hearts.simpleDescription()
+
+enum ServerResponse {
+  case result(String, String)
+  case failure(String)
+}
+let success = ServerResponse.result("6:00 am", "8:09 pm")
+let failure = ServerResponse.failure("Out of cheese.")
+
+switch success {
+case let .result(sunrise, sunset):
+  print("Sunrise is at \(sunrise) and sunset is at \(sunset).")
+case let .failure(message):
+  print("Failure... \(message)")
+}
 
 struct Card {
   var rank: Rank
@@ -53,21 +67,7 @@ struct Card {
     return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
   }
 }
-let threeOfSpades = Card(rank: .Three, suit: .Spades)
+let threeOfSpades = Card(rank: .three, suit: .spades)
 let threeOfSpadesDescription = threeOfSpades.simpleDescription()
-
-enum ServerResponse {
-  case Result(String, String)
-  case Error(String)
-}
-let success = ServerResponse.Result("6:00 am", "8:09 pm")
-let failure = ServerResponse.Error("Out of cheese.")
-
-switch success {
-case let .Result(sunrise, sunset):
-  let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
-case let .Error(error):
-  let serverResponse = "Failure... \(error)"
-}
 
 //: [Next](@next)

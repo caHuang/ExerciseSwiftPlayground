@@ -7,7 +7,7 @@ protocol ExampleProtocol {
   mutating func adjust()
 }
 
-class SimpleClass: ExampleProtocol{
+class SimpleClass: ExampleProtocol {
   var simpleDescription: String = "A very simple class."
   var anotherProperty: Int = 69105
   

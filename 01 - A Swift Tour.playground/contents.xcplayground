@@ -6,7 +6,8 @@
         <page name='03 - Functions and Closures'/>
         <page name='04 - Objects and Classes'/>
         <page name='05 - Enumerations and Structures'/>
-        <page name='07 - Protocols and Extensions'/>
+        <page name='06 - Protocols and Extensions'/>
+        <page name='07 - Error Handling'/>
         <page name='08 - Generics'/>
     </pages>
 </playground>

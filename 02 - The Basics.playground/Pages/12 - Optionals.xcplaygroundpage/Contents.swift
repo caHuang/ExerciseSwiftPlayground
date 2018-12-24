@@ -24,8 +24,16 @@ if let actualNumber = Int(possibleNumber) {
 }
 
 
-if let firstNumber = Int("4"), secondNumber = Int("42") where firstNumber < secondNumber {
+if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
   print("\(firstNumber) < \(secondNumber)")
+}
+
+if let firstNumber = Int("4") {
+  if let secondNumber = Int("42") {
+    if firstNumber < secondNumber && secondNumber < 100 {
+      print("\(firstNumber) < \(secondNumber) < 100")
+    }
+  }
 }
 
 let possibleString: String? = "An optional string."

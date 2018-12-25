@@ -26,3 +26,9 @@ if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
 } else {
   print("ACCESS DENIED")
 }
+
+if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
+  print("Welcome!")
+} else {
+  print("ACCESS DENIED")
+}

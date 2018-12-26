@@ -1,11 +1,5 @@
 //: [Previous](@previous)
 
-let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
-
-let dollarSign = "\u{24}"
-let blackHeart = "\u{2665}"
-let sparklingHeart = "\u{1F496}"
-
 let eAcute: Character = "\u{E9}"
 let combinedEAcute: Character = "\u{65}\u{301}"
 

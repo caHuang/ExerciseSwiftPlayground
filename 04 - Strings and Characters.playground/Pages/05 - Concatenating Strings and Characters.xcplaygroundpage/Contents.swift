@@ -10,4 +10,20 @@ instruction += string2
 let exclamationMark: Character = "!"
 welcome.append(exclamationMark)
 
+let badStart = """
+one
+two
+"""
+let end = """
+three
+"""
+print(badStart + end)
+
+let goodStart = """
+one
+two
+
+"""
+print(goodStart + end)
+
 //: [Next](@next)

@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-for character in "Dog!🐶".characters {
+for character in "Dog!🐶" {
   print(character)
 }
 

@@ -1,7 +1,3 @@
-//: [Previous](@previous)
-
-//: Generics
-
 func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
   var result = [Item]()
   for _ in 0..<numberOfTimes {
@@ -11,15 +7,17 @@ func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
 }
 makeArray(repeating: "knock", numberOfTimes: 4)
 
+
 enum OptionalValue<Wrapped> {
-  case None
-  case Some(Wrapped)
+  case none
+  case some(Wrapped)
 }
-var possibleInteger: OptionalValue<Int> = .None
-possibleInteger = .Some(100)
+var possibleInteger: OptionalValue<Int> = .none
+possibleInteger = .some(100)
+
 
 func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
-  where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
+  where T.Element: Equatable, T.Element == U.Element {
     for lhsItem in lhs {
       for rhsItem in rhs {
         if lhsItem == rhsItem {

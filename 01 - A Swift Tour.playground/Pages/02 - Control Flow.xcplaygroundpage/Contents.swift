@@ -1,9 +1,5 @@
-//: [Previous](@previous)
-
-//: Control Flow
 let individualScores = [75, 43, 103, 87, 12]
 var teamScore = 0
-
 for score in individualScores {
   if score > 50 {
     teamScore += 3
@@ -11,8 +7,8 @@ for score in individualScores {
     teamScore += 1
   }
 }
-
 print(teamScore)
+
 
 var optionalString: String? = "Hello"
 print(optionalString == nil)
@@ -23,9 +19,11 @@ if let name = optionalName {
   greeting = "Hello, \(name)"
 }
 
+
 let nickName: String? = nil
 let fullName: String = "John Appleseed"
 let informalGreeting = "Hi \(nickName ?? fullName)"
+
 
 let vegetable = "red pepper"
 switch vegetable {
@@ -38,6 +36,7 @@ case let x where x.hasSuffix("pepper"):
 default:
   print("Everything tastes good in soup")
 }
+
 
 let interestingNumbers = [
   "Prime": [2, 3, 5, 7, 11, 13],
@@ -55,6 +54,7 @@ for (kind, numbers) in interestingNumbers {
 }
 print(largest)
 
+
 var n = 2
 while n < 100 {
   n *= 2
@@ -67,10 +67,9 @@ repeat {
 } while m < 100
 print(m)
 
+
 var total = 0
 for i in 0..<4 {
   total += i
 }
 print(total)
-
-//: [Next](@next)

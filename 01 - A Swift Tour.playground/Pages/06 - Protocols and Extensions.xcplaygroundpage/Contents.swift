@@ -1,16 +1,12 @@
-//: [Previous](@previous)
-
-//: Protocols and Extensions
-
 protocol ExampleProtocol {
   var simpleDescription: String { get }
   mutating func adjust()
 }
 
+
 class SimpleClass: ExampleProtocol {
   var simpleDescription: String = "A very simple class."
   var anotherProperty: Int = 69105
-  
   func adjust() {
     simpleDescription += " Now 100% adjusted."
   }
@@ -29,6 +25,7 @@ var b = SimpleStructe()
 b.adjust()
 let bDescription = b.simpleDescription
 
+
 extension Int: ExampleProtocol {
   var simpleDescription: String {
     return "The number \(self)"
@@ -39,8 +36,6 @@ extension Int: ExampleProtocol {
 }
 print(7.simpleDescription)
 
+
 let protocolValue: ExampleProtocol = a
 print(protocolValue.simpleDescription)
-
-
-//: [Next](@next)

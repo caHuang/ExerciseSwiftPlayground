@@ -1,16 +1,15 @@
-//: [Previous](@previous)
-
-//: Objects and Classes
-
 class Shape {
   var numberOfSides = 0
   func simpleDescription() -> String {
     return "A shape with \(numberOfSides) sides."
   }
 }
+
+
 var shape = Shape()
 shape.numberOfSides = 7
 var shapeDescription = shape.simpleDescription()
+
 
 class NamedShape {
   var numberOfSides: Int = 0
@@ -24,6 +23,7 @@ class NamedShape {
     return "A shape with \(numberOfSides) sides."
   }
 }
+
 
 class Square: NamedShape {
   var sideLength: Double
@@ -45,6 +45,7 @@ class Square: NamedShape {
 let test = Square(sideLength: 5.2, name: "my test square")
 test.area()
 test.simpleDescription()
+
 
 class EquilateralTriangle: NamedShape {
   var sideLength: Double = 0.0
@@ -73,19 +74,18 @@ print(triangle.perimeter)
 triangle.perimeter = 9.9
 print(triangle.sideLength)
 
+
 class TriangleAndSquare {
   var triangle: EquilateralTriangle {
     willSet {
       square.sideLength = newValue.sideLength
     }
   }
-  
   var square: Square {
     willSet {
       triangle.sideLength = newValue.sideLength
     }
   }
-  
   init(size: Double, name: String) {
     square = Square(sideLength: size, name: name)
     triangle = EquilateralTriangle(sideLength: size, name: name)
@@ -97,7 +97,6 @@ print(triangleAndSquare.triangle.sideLength)
 triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
 print(triangleAndSquare.triangle.sideLength)
 
+
 let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
 let sideLength = optionalSquare?.sideLength
-
-//: [Next](@next)

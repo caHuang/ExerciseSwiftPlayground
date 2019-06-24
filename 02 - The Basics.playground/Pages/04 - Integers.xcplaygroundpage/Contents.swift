@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 //:　Integers
 //: * Int
 //:   * On a 32-bit platform, Int is the same size as Int32.
@@ -10,5 +8,3 @@
 
 let minValue = UInt8.min
 let maxValue = UInt8.max
-
-//: [Next](@next)

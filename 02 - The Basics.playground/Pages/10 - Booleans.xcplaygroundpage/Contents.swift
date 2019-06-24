@@ -1,7 +1,6 @@
-//: [Previous](@previous)
-
 let orangesAreOrange = true
 let turnipsAreDelicious = false
+
 
 if turnipsAreDelicious {
   print("Mmm, tasty turnips!")
@@ -15,9 +14,8 @@ if turnipsAreDelicious {
 //  // this example will not compile, and will report an error
 //}
 
+
 let i = 1
 if i == 1 {
   // this example will compile successfully
 }
-
-//: [Next](@next)

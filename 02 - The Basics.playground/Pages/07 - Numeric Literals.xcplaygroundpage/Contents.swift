@@ -1,7 +1,3 @@
-//: [Previous](@previous)
-
-//: Numeric Literals
-
 //: Integer literals can be written as:
 //: * A decimal number, with no prefix
 //: * A binary number, with a 0b prefix
@@ -25,8 +21,7 @@ let decimalDouble = 12.1875
 let exponentDouble = 1.21875e1
 let hexadecimalDouble = 0xC.3p0
 
+
 let paddedDouble = 000123.456
 let oneMillion = 1_000_000
 let justOverOneMillion = 1_000_000.000_000_1
-
-//: [Next](@next)

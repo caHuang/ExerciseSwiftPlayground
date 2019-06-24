@@ -1,16 +1,18 @@
-//: [Previous](@previous)
-
 let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber)
+
 
 var serverResponseCode: Int? = 404
 serverResponseCode = nil
 
+
 var surveyAnswer: String?
+
 
 if convertedNumber != nil {
   print("convertedNumber contains some integer value.")
 }
+
 
 if convertedNumber != nil {
   print("convertedNumber has an integer value of \(convertedNumber!).")
@@ -36,18 +38,19 @@ if let firstNumber = Int("4") {
   }
 }
 
+
 let possibleString: String? = "An optional string."
 let forcedString: String = possibleString!
 
 let assumedString: String! = "An implicitly unwrapped optional string."
 let implicitString: String = assumedString
 
+
 if assumedString != nil {
   print(assumedString)
 }
 
+
 if let definiteString = assumedString {
   print(definiteString)
 }
-
-//: [Next](@next)

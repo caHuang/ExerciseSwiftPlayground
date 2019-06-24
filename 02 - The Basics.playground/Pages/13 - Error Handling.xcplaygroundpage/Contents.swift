@@ -1,8 +1,7 @@
-//: [Previous](@previous)
-
 func canThrowAnError() throws {
   // this function may or may not throw an error
 }
+
 
 do {
   try canThrowAnError()
@@ -10,6 +9,7 @@ do {
 } catch {
   // an error was thrown
 }
+
 
 enum SandwichError: Error {
   case outOfCleanDishes
@@ -40,5 +40,3 @@ do {
 } catch SandwichError.missingIngredients(let ingredients) {
   buyGroceries(ingredients)
 }
-
-//: [Next](@next)

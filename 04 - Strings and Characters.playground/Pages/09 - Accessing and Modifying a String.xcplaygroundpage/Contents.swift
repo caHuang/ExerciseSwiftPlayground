@@ -1,29 +1,29 @@
-//: [Previous](@previous)
-
 let greeting = "Guten Tag!"
 greeting[greeting.startIndex]
 
-greeting[greeting.endIndex.predecessor()]
-greeting[greeting.startIndex.successor()]
+greeting[greeting.index(before: greeting.endIndex)]
+greeting[greeting.index(after: greeting.startIndex)]
 
-let index = greeting.startIndex.advancedBy(7)
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
 greeting[index]
 
-//greeting[greeting.endIndex]
-//greeting.endIndex.successor()
 
-for index in greeting.characters.indices {
+//greeting[greeting.endIndex]
+//greeting.index(after: greeting.endIndex)
+
+
+for index in greeting.indices {
   print("\(greeting[index]) ", terminator: " ")
 }
 
+
 var welcome = "hello"
-welcome.insert("!", atIndex: welcome.endIndex)
+welcome.insert("!", at: welcome.endIndex)
 
-welcome.insertContentsOf(" there".characters, at: welcome.endIndex.predecessor())
-
-welcome.removeAtIndex(welcome.endIndex.predecessor())
-let range = welcome.endIndex.advancedBy(-6)..<welcome.endIndex
-welcome.removeRange(range)
+welcome.insert(contentsOf: " there", at: welcome.index(before: welcome.endIndex))
 
 
-//: [Next](@next)
+welcome.remove(at: welcome.index(before: welcome.endIndex))
+
+let range = welcome.index(welcome.endIndex, offsetBy: -6)..<welcome.endIndex
+welcome.removeSubrange(range)

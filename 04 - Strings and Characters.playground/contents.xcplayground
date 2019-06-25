@@ -10,7 +10,8 @@
         <page name='07 - Unicode'/>
         <page name='08 - Counting Characters'/>
         <page name='09 - Accessing and Modifying a String'/>
-        <page name='10 - Comparing Strings'/>
-        <page name='11 - Unicode Representations of Strings'/>
+        <page name='10 - Substrings'/>
+        <page name='11 - Comparing Strings'/>
+        <page name='12 - Unicode Representations of Strings'/>
     </pages>
 </playground>

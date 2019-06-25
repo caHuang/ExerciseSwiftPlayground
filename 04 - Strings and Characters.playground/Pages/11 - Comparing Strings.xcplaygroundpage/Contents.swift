@@ -1,23 +1,27 @@
-//: [Previous](@previous)
-
 let quotation = "We're a lot alike, you and I."
 let sameQuotation = "We're a lot alike, you and I."
 if quotation == sameQuotation {
   print("These two strings are considered equal")
 }
 
+
 let eAcuteQuestion = "Voulez-vous un caf\u{E9}?"
+
 let combinedEAcuteQuestion = "Voulez-vous un caf\u{65}\u{301}?"
+
 if eAcuteQuestion == combinedEAcuteQuestion {
   print("These two strings are considered equal")
 }
 
+
 let latinCapitalLetterA: Character = "\u{41}"
+
 let cyrillicCapitalLetterA: Character = "\u{0410}"
 
 if latinCapitalLetterA != cyrillicCapitalLetterA {
   print("These two characters are not equivalent")
 }
+
 
 let romeoAndJuliet = [
   "Act 1 Scene 1: Verona, A public place",
@@ -41,6 +45,7 @@ for scene in romeoAndJuliet {
 }
 print("There are \(act1SceneCount) scenes in Act 1")
 
+
 var mansionCount = 0
 var cellCount = 0
 for scene in romeoAndJuliet {
@@ -50,7 +55,4 @@ for scene in romeoAndJuliet {
     cellCount += 1
   }
 }
-
 print("\(mansionCount) mansion scenes; \(cellCount) cell scenes")
-
-//: [Next](@next)

@@ -1,22 +1,17 @@
-//: [Previous](@previous)
-
 let puzzleInput = "great minds think alike"
 var puzzleOutput = ""
-
-for character in puzzleInput.characters {
-  switch character {
-  case "a", "e", "i", "o", "u", " ":
+let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
+for character in puzzleInput {
+  if charactersToRemove.contains(character) {
     continue
-  default:
-    puzzleOutput.append(character)
   }
+  puzzleOutput.append(character)
 }
 print(puzzleOutput)
 
 
 let numberSymbol: Character = "三"
 var possibleIntegerValue: Int?
-
 switch numberSymbol {
 case "1", "١", "一", "๑":
   possibleIntegerValue = 1
@@ -29,7 +24,6 @@ case "4", "٤", "四", "๔":
 default:
   break
 }
-
 if let integerValue = possibleIntegerValue {
   print("The integer value of \(numberSymbol) is \(integerValue).")
 } else {
@@ -39,7 +33,6 @@ if let integerValue = possibleIntegerValue {
 
 let integerToDescribe = 5
 var description = "The number \(integerToDescribe) is"
-
 switch integerToDescribe {
 case 2, 3, 5, 7, 11, 13, 17, 19:
   description += " a prime number, and also"
@@ -51,19 +44,15 @@ print(description)
 
 
 let finalSquare = 25
-var board = [Int](count: finalSquare + 1, repeatedValue: 0)
-
+var board = [Int](repeating: 0, count: finalSquare + 1)
 board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
 board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
-
 var square = 0
 var diceRoll = 0
 
 gameLoop: while square != finalSquare {
   diceRoll += 1
-  if diceRoll == 7 {
-    diceRoll = 1
-  }
+  if diceRoll == 7 { diceRoll = 1 }
   switch square + diceRoll {
   case finalSquare:
     break gameLoop
@@ -75,5 +64,3 @@ gameLoop: while square != finalSquare {
   }
 }
 print("Game over!")
-
-//: [Next](@next)

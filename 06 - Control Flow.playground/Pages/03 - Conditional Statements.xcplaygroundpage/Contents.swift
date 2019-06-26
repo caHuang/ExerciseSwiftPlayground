@@ -1,9 +1,8 @@
-//: [Previous](@previous)
-
 var temperatureInFahrenheit = 30
 if temperatureInFahrenheit <= 32 {
   print("It's very cold. Consider wearing a scarf.")
 }
+
 
 temperatureInFahrenheit = 40
 if temperatureInFahrenheit <= 32 {
@@ -11,6 +10,7 @@ if temperatureInFahrenheit <= 32 {
 } else {
   print("It's not that cold. Wear a t-shirt.")
 }
+
 
 temperatureInFahrenheit = 90
 if temperatureInFahrenheit <= 32 {
@@ -21,6 +21,7 @@ if temperatureInFahrenheit <= 32 {
   print("It's not that cold. Wear a t-shirt.")
 }
 
+
 temperatureInFahrenheit = 72
 if temperatureInFahrenheit <= 32 {
   print("It's very cold. Consider wearing a scarf.")
@@ -28,17 +29,18 @@ if temperatureInFahrenheit <= 32 {
   print("It's really warm. Don't forget to wear sunscreen.")
 }
 
-let someCharacter: Character = "e"
+
+let someCharacter: Character = "z"
 switch someCharacter {
-case "a", "e", "i", "o", "u":
-  print("\(someCharacter) is a vowel")
-case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
-  print("\(someCharacter) is a consonant")
+case "a":
+  print("The first letter of the alphabet")
+case "z":
+  print("The last letter of the alphabet")
 default:
-  print("\(someCharacter) is not a vowel or a consonant")
+  print("Some other character")
 }
 
-//: case "a": does not contain any executable statements.
+
 //let anotherCharacter: Character = "a"
 //switch anotherCharacter {
 //case "a":
@@ -47,6 +49,8 @@ default:
 //default:
 //  print("Not the letter A")
 //}
+
+
 let anotherCharacter: Character = "a"
 switch anotherCharacter {
 case "a", "A":
@@ -55,9 +59,10 @@ default:
   print("Not the letter A")
 }
 
+
 let approximateCount = 62
 let countedThings = "moons orbiting Saturn"
-var naturalCount: String
+let naturalCount: String
 switch approximateCount {
 case 0:
   naturalCount = "no"
@@ -78,18 +83,18 @@ print("There are \(naturalCount) \(countedThings).")
 let somePoint = (1, 1)
 switch somePoint {
 case (0, 0):
-  print("(0, 0) is at the origin")
+  print("\(somePoint) is at the origin")
 case (_, 0):
-  print("(\(somePoint.0), 0) is on the x-axis")
+  print("\(somePoint) is on the x-axis")
 case (0, _):
-  print("(0, \(somePoint.1)) is on the y-axis")
+  print("\(somePoint) is on the y-axis")
 case (-2...2, -2...2):
-  print("(\(somePoint.0), \(somePoint.1)) is inside the box")
+  print("\(somePoint) is inside the box")
 default:
-  print("(\(somePoint.0), \(somePoint.1)) is outside of the box")
+  print("\(somePoint) is outside of the box")
 }
 
-//: This switch statement does not have a default case. The final case, case let (x, y), declares a tuple of two placeholder constants that can match any value. As a result, this case matches all possible remaining values, and a default case is not needed to make the switch statement exhaustive.
+
 let anotherPoint = (2, 0)
 switch anotherPoint {
 case (let x, 0):
@@ -99,6 +104,7 @@ case (0, let y):
 case let (x, y):
   print("somewhere else at (\(x), \(y))")
 }
+
 
 let yetAnotherPoint = (1, -1)
 switch yetAnotherPoint {
@@ -111,4 +117,22 @@ case let (x, y):
 }
 
 
-//: [Next](@next)
+//let someCharacter: Character = "e"
+//switch someCharacter {
+//case "a", "e", "i", "o", "u":
+//  print("\(someCharacter) is a vowel")
+//case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+//     "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+//  print("\(someCharacter) is a consonant")
+//default:
+//  print("\(someCharacter) is not a vowel or a consonant")
+//}
+
+
+let stillAnotherPoint = (9, 0)
+switch stillAnotherPoint {
+case (let distance, 0), (0, let distance):
+  print("On an axis, \(distance) from the origin")
+default:
+  print("Not on an axis")
+}

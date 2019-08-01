@@ -1,18 +1,14 @@
-//: [Previous](@previous)
-
-func sayHello(personName: String) -> String {
-  let greeting = "Hello, " + personName + "!"
+func greet(person: String) -> String {
+  let greeting = "Hello, " + person + "!"
   return greeting
 }
 
-print(sayHello("Anna"))
-print(sayHello("Brian!"))
+
+print(greet(person: "Anna"))
+print(greet(person: "Brian"))
 
 
-func sayHelloAgain(personName: String) -> String {
-  return "Hello again, " + personName + "!"
+func greetAgain(person: String) -> String {
+  return "Hello again, " + person + "!"
 }
-
-print(sayHelloAgain("Anna"))
-
-//: [Next](@next)
+print(greetAgain(person: "Anna"))

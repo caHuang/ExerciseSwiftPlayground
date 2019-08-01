@@ -3,7 +3,7 @@
     <pages>
         <page name='01 - Defining and Calling Functions'/>
         <page name='02 - Function Parameters and Return Values'/>
-        <page name='03 - Function Parameter Names'/>
+        <page name='03 - Function Argument Labels and Parameter Names'/>
         <page name='04 - Function Types'/>
         <page name='05 - Nested Functions'/>
     </pages>

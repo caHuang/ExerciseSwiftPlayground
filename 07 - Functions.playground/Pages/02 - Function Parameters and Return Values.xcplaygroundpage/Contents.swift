@@ -1,56 +1,46 @@
-//: [Previous](@previous)
-
 func sayHelloWorld() -> String {
   return "hello, world"
 }
-
 print(sayHelloWorld())
 
 
-func sayHello(personName: String) -> String {
-  let greeting = "Hello, " + personName + "!"
+func greet(person: String) -> String {
+  let greeting = "Hello, " + person + "!"
   return greeting
 }
 
-func sayHelloAgain(personName: String) -> String {
-  return "Hello again, " + personName + "!"
+func greetAgain(person: String) -> String {
+  return "Hello again, " + person + "!"
 }
 
-func sayHello(personName: String, alreadyGreeted: Bool) -> String {
+func greet(person: String, alreadyGreeted: Bool) -> String {
   if alreadyGreeted {
-   return sayHelloAgain(personName)
+    return greetAgain(person: person)
   } else {
-   return sayHello(personName)
+    return greet(person: person)
   }
 }
+print(greet(person: "Tim", alreadyGreeted: true))
 
-print(sayHello("Tim", alreadyGreeted: true))
 
-
-func sayGoodbye(personName: String) {
-  print("Goodbye, \(personName)!")
+func greet1(person: String) {
+  print("Hello, \(person)!")
 }
-sayGoodbye("Dave")
+greet1(person: "Dave")
 
 
-func printAndCount(stringToPrint: String) -> Int {
-  print(stringToPrint)
-  return stringToPrint.characters.count
+func printAndCount(string: String) -> Int {
+  print(string)
+  return string.count
 }
-
-func printWithoutCounting(stringToPrint: String) {
-  printAndCount(stringToPrint)
+func printWithoutCounting(string: String) {
+  let _ = printAndCount(string: string)
 }
+printAndCount(string: "hello, world")
+printWithoutCounting(string: "hello, world")
 
-printAndCount("hello, world")
-printWithoutCounting("hello, world")
 
-
-func minMax(array: [Int]) -> (min: Int, max: Int)? {
-  if array.isEmpty {
-    return nil
-  }
-  
+func minMax(array: [Int]) -> (min: Int, max: Int) {
   var currentMin = array[0]
   var currentMax = array[0]
   for value in array[1..<array.count] {
@@ -63,9 +53,38 @@ func minMax(array: [Int]) -> (min: Int, max: Int)? {
   return (currentMin, currentMax)
 }
 
-if let bounds = minMax([8, -6, 2, 109, 3, 71]) {
+
+let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
+print("min is \(bounds.min) and max is \(bounds.max)")
+
+
+func minMax1(array: [Int]) -> (min: Int, max: Int)? {
+  if array.isEmpty { return nil }
+  var currentMin = array[0]
+  var currentMax = array[0]
+  for value in array[1..<array.count] {
+    if value < currentMin {
+      currentMin = value
+    } else if value > currentMax {
+      currentMax = value
+    }
+  }
+  return (currentMin, currentMax)
+}
+
+
+if let bounds = minMax1(array: [8, -6, 2, 109, 3, 71]) {
   print("min is \(bounds.min) and max is \(bounds.max)")
 }
 
 
-//: [Next](@next)
+// error: Missing return in a function expected to return 'String'
+//func greeting(for person: String) -> String {
+//  "Hello, " + person + "!"
+//}
+//print(greeting(for: "Dave"))
+
+func anotherGreeting(for person: String) -> String {
+  return "Hello, " + person + "!"
+}
+print(anotherGreeting(for: "Dave"))

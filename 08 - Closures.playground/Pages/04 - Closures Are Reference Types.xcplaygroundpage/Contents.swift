@@ -1,21 +1,17 @@
-//: [Previous](@previous)
-
-func makeIncrementor(forIncrement amount: Int) -> () -> Int {
+func makeIncrementer(forIncrement amount: Int) -> () -> Int {
   var runningTotal = 0
-  func incrementor() -> Int {
+  func incrementer() -> Int {
     runningTotal += amount
     return runningTotal
   }
-  return incrementor
+  return incrementer
 }
 
-let incrementByTen = makeIncrementor(forIncrement: 10)
-incrementByTen()
-incrementByTen()
-incrementByTen()
-incrementByTen()
+let incrementByTen = makeIncrementer(forIncrement: 10)
+
 
 let alsoIncrementByTen = incrementByTen
 alsoIncrementByTen()
 
-//: [Next](@next)
+
+incrementByTen()

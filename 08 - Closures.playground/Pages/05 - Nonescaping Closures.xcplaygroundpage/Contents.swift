@@ -1,19 +1,18 @@
-//: [Previous](@previous)
-
-func someFunctionWithNoescapeClosure(@noescape closure: () -> Void) {
-  closure()
+var completionHandlers: [() -> Void] = []
+func someFunctionWithEscapingClosure(completionHandler: @escaping () -> Void) {
+  completionHandlers.append(completionHandler)
 }
 
-var completionHandlers: [() -> Void] = []
-func someFunctionWithEscapingClosure(completionHandler: () -> Void) {
-  completionHandlers.append(completionHandler)
+
+func someFunctionWithNonescapingClosure(closure: () -> Void) {
+  closure()
 }
 
 class SomeClass {
   var x = 10
   func doSomething() {
     someFunctionWithEscapingClosure { self.x = 100 }
-    someFunctionWithNoescapeClosure { x = 200 }
+    someFunctionWithNonescapingClosure { x = 200 }
   }
 }
 
@@ -23,5 +22,3 @@ print(instance.x)
 
 completionHandlers.first?()
 print(instance.x)
-
-//: [Next](@next)

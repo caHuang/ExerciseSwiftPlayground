@@ -3,8 +3,9 @@
     <pages>
         <page name='01 - Enumeration Syntax'/>
         <page name='02 - Matching Enumeration Values with a Switch Statement'/>
-        <page name='03 - Associated Values'/>
-        <page name='04 - Raw Values'/>
-        <page name='05 - Recursive Enumerations'/>
+        <page name='03 - Iterating over Enumeration Cases'/>
+        <page name='04 - Associated Values'/>
+        <page name='05 - Raw Values'/>
+        <page name='06 - Recursive Enumerations'/>
     </pages>
 </playground>

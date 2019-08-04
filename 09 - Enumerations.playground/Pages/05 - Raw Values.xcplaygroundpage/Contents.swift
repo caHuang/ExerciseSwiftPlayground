@@ -1,34 +1,32 @@
-//: [Previous](@previous)
-
 enum ASCIIControlCharacter: Character {
-  case Tab = "\t"
-  case LineFeed = "\n"
-  case CarriageReturn = "\r"
+  case tab = "\t"
+  case lineFeed = "\n"
+  case carriageReturn = "\r"
 }
 
 
 enum Planet: Int {
-  case Mercury = 1, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+  case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
 }
 
 
 enum CompassPoint: String {
-  case North, South, East, West
+  case north, south, east, west
 }
 
 
-let earthsOrder = Planet.Earth.rawValue
+let earthsOrder = Planet.earth.rawValue
 
-let sunsetDirection = CompassPoint.West.rawValue
+let sunsetDirection = CompassPoint.west.rawValue
 
 
 let possiblePlanet = Planet(rawValue: 7)
 
 
-let positionToFind = 9
+let positionToFind = 11
 if let somePlanet = Planet(rawValue: positionToFind) {
   switch somePlanet {
-  case .Earth:
+  case .earth:
     print("Mostly harmless")
   default:
     print("Not a safe place for humans")
@@ -36,5 +34,3 @@ if let somePlanet = Planet(rawValue: positionToFind) {
 } else {
   print("There isn't a planet at position \(positionToFind)")
 }
-
-//: [Next](@next)

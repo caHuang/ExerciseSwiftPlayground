@@ -1,15 +1,18 @@
-enum CompassPoint {
-  case North
-  case South
-  case East
-  case West
+enum SomeEnumeration {
 }
+
+
+enum CompassPoint {
+  case north
+  case south
+  case east
+  case west
+}
+
 
 enum Planet {
-  case Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+  case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
 }
 
-var directionToHead = CompassPoint.West
-directionToHead = .East
-
-//: [Next](@next)
+var directionToHead = CompassPoint.west
+directionToHead = .east

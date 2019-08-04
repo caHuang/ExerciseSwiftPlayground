@@ -1,37 +1,34 @@
-//: [Previous](@previous)
-
 enum CompassPoint {
-  case North
-  case South
-  case East
-  case West
+  case north
+  case south
+  case east
+  case west
 }
 
 enum Planet {
-  case Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+  case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
 }
 
-var directionToHead = CompassPoint.West
-directionToHead = .South
+var directionToHead = CompassPoint.west
+directionToHead = .south
+
 
 switch directionToHead {
-case .North:
+case .north:
   print("Lots of planets have a north")
-case .South:
+case .south:
   print("Watch out for penguins")
-case .East:
+case .east:
   print("Where the sun rises")
-case .West:
+case .west:
   print("Where the skies are blue")
 }
 
 
-let somePlanet = Planet.Earth
+let somePlanet = Planet.earth
 switch somePlanet {
-case .Earth:
+case .earth:
   print("Mostly harmless")
 default:
   print("Not a safe place for humans")
 }
-
-//: [Next](@next)

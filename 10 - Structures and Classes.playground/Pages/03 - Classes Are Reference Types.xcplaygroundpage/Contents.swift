@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 struct Resolution {
   var width = 0
   var height = 0
@@ -24,11 +22,10 @@ tenEighty.frameRate = 25.0
 let alsoTenEighty = tenEighty
 alsoTenEighty.frameRate = 30.0
 
+
 print("The frameRate property of tenEighty is now \(tenEighty.frameRate)")
 
 
 if tenEighty === alsoTenEighty {
-  print("tenEighty and alsoTenEighty refer to the same Resolution instance.")
+  print("tenEighty and alsoTenEighty refer to the same VideoMode instance.")
 }
-
-//: [Next](@next)

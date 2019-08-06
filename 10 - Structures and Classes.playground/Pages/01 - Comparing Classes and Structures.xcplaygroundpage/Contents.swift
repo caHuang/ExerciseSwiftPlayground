@@ -1,9 +1,7 @@
-class SomeClass {
-  // class definition goes here
+struct SomeStructure {
 }
 
-struct SomeStructure {
-  // structure definition goes here
+class SomeClass {
 }
 
 
@@ -35,5 +33,3 @@ print("The width of someVideoMode is now \(someVideoMode.resolution.width)")
 
 
 let vga = Resolution(width: 640, height: 480)
-
-//: [Next](@next)

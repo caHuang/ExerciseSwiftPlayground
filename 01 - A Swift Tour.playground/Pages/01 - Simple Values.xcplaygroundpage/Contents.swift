@@ -20,28 +20,32 @@ let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 
 
 let quotation = """
-I said "I have \(apples) apples."
-And then I said "I have \(apples + oranges) pieces of fruit."
-"""
+        Even though there's whitespace to the left,
+        the actual lines aren't indented.
+            Except for this line.
+        Double quotes (") can appear without being escaped.
+
+        I still have \(apples + oranges) pieces of fruit.
+        """
 
 
-var shoppingList = ["catfish", "water", "tulips", "blue paint"]
-shoppingList[1] = "bottle of water"
+var fruits = ["strawberries", "limes", "tangerines"]
+fruits[1] = "grapes"
 
 var occupations = [
-  "Malcolm": "Captain",
-  "Kaylee": "Mechanic"
+    "Malcolm": "Captain",
+    "Kaylee": "Mechanic",
 ]
 occupations["Jayne"] = "Public Relations"
 
 
-shoppingList.append("blue paint")
-print(shoppingList)
+fruits.append("blueberries")
+print(fruits)
 
 
-let emptyArray = [String]()
-let emptyDictionary = [String: Float]()
-
-
-shoppingList = []
+fruits = []
 occupations = [:]
+
+
+let emptyArray: [String] = []
+let emptyDictionary: [String: Float] = [:]
